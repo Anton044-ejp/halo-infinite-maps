@@ -109,7 +109,7 @@ public class RandomizerDialog extends JDialog {
 
         // Randomize button
         gbc.gridx = 2; gbc.weightx = 1.0;
-        randomizeButton = new JButton("🎲 Randomize!");
+        randomizeButton = new JButton("[R] Randomize!");
         randomizeButton.setFont(new Font("Arial", Font.BOLD, 14));
         randomizeButton.setBackground(new Color(120, 40, 180));
         randomizeButton.setForeground(Color.WHITE);
@@ -151,7 +151,7 @@ public class RandomizerDialog extends JDialog {
 
         // Placeholder label
         JLabel placeholder = new JLabel(
-                "Press Randomize to get suggestions", SwingConstants.CENTER);
+                "Press Randomize above to get suggestions or find specific game types with dropdown below \u2193", SwingConstants.CENTER);
         placeholder.setFont(new Font("Arial", Font.ITALIC, 14));
         placeholder.setForeground(Color.GRAY);
         panel.add(placeholder, BorderLayout.SOUTH);
@@ -175,7 +175,7 @@ public class RandomizerDialog extends JDialog {
             gameTypeCombo.addItem(gt);
         }
 
-        JButton acceptButton = new JButton("✅ Accept");
+        JButton acceptButton = new JButton("[OK] Accept");
         acceptButton.setFont(new Font("Arial", Font.BOLD, 13));
         acceptButton.setPreferredSize(new Dimension(140, 38));
         acceptButton.setBackground(new Color(0, 160, 80));

@@ -285,7 +285,7 @@ public class MainFrame extends JFrame {
         int y = 30;
 
         // Header
-        JLabel header = new JLabel("🎮 GAME NIGHT");
+        JLabel header = new JLabel("\u2694 GAME NIGHT");
         header.setFont(new Font("Arial", Font.BOLD, 22));
         header.setForeground(new Color(180, 120, 255));
         header.setBounds(x, y, 800, 35);
@@ -407,7 +407,7 @@ public class MainFrame extends JFrame {
         y += 90;
 
         // Back button
-        backToMapsButton = new JButton("← Back to Maps");
+        backToMapsButton = new JButton("\u2190 Back to Maps");
         backToMapsButton.setFont(new Font("Arial", Font.BOLD, 14));
         backToMapsButton.setPreferredSize(new Dimension(180, 40));
         backToMapsButton.setBounds(x, y, 200, 40);
@@ -527,7 +527,7 @@ public class MainFrame extends JFrame {
         y += 55;
         
         // Randomizer button
-        randomizeButton = new JButton("🎲 Randomize Game Type Variant");
+        randomizeButton = new JButton("[R] Randomize Game Type Variant");
         randomizeButton.setBounds(x, y, 450, 38);
         randomizeButton.setFont(new Font("Arial", Font.BOLD, 13));
         randomizeButton.setBackground(new Color(120, 40, 180));
@@ -574,21 +574,21 @@ public class MainFrame extends JFrame {
         addMapButton.setBackground(new Color(0, 160, 80));
         addMapButton.setForeground(Color.WHITE);
         addMapButton.setOpaque(true);
-
-        editMapButton = new JButton("✎ Edit Selected Map");
+        
+        editMapButton = new JButton("✓ Edit Selected Map");
         editMapButton.setFont(new Font("Arial", Font.BOLD, 13));
         editMapButton.setPreferredSize(new Dimension(180, 40));
         editMapButton.setEnabled(false);  // disabled until a map is selected
         
-        deactivateMapButton = new JButton("✖ Remove Map");
+        deactivateMapButton = new JButton("\u2717 Remove Map");
         deactivateMapButton.setFont(new Font("Arial", Font.BOLD, 13));
         deactivateMapButton.setPreferredSize(new Dimension(150, 40));
         deactivateMapButton.setBackground(new Color(180, 50, 50));
-        deactivateMapButton.setForeground(Color.RED);
+        deactivateMapButton.setForeground(Color.BLACK);
         deactivateMapButton.setOpaque(true);
         deactivateMapButton.setEnabled(false);
 
-        logSessionButton = new JButton("📋 Log Game Session");
+        logSessionButton = new JButton("[L] Log Game Session");
         logSessionButton.setFont(new Font("Arial", Font.BOLD, 13));
         logSessionButton.setPreferredSize(new Dimension(180, 40));
         logSessionButton.setEnabled(false);  // disabled until a map is selected
